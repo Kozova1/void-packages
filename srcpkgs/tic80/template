@@ -1,0 +1,16 @@
+# Template file for 'tic80'
+pkgname=tic80
+version=0.70.6
+revision=1
+archs="x86_64"
+depends="glu libfreeglut gtk+3 libglvnd alsa-lib harfbuzz libharfbuzz SDL2 SDL2_gfx pcre libtool"
+short_desc="TIC-80 Fantasy Console"
+maintainer="Kozova1 <mug66kk@gmail.com>"
+license="MIT"
+homepage="https://tic.computer/"
+distfiles="https://github.com/nesbox/TIC-80/releases/download/v${version}/tic80_${version}.tar.gz"
+checksum=48a28660cce0e25e63b4a0c3586640f5ef47bd63ceff9d0951afccdf16f2ffc8
+
+do_install() {
+	vbin tic80
+}
